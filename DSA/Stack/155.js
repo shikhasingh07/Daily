@@ -31,10 +31,3 @@ obj.push(2);
 obj.push(0);
 obj.push(3);
 obj.push(0);
-console.log(obj.getMin()); // 0
-obj.pop();
-console.log(obj.getMin()); // 0
-obj.pop();
-console.log(obj.getMin()); // 0
-obj.pop();
-console.log(obj.getMin()); // 2
