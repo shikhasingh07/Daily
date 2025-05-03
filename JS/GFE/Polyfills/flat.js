@@ -1,9 +1,15 @@
 Array.prototype.myFlat = (depth = 1) => {
-    const result = []; 
-    const flat = (arr , ) => { 
-
+    const arr = [];
+    let len = 0;
+    while (len < this.length) {
+      let ans = [];
+   
+      for (let j = 0 ; j < size && len < this.length; j++) {
+        ans.push(this[len]);
+        len++;
+      }
+      arr.push(ans);
     }
-    return result;
 }
 
 
