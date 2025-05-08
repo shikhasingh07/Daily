@@ -1,11 +1,14 @@
 const maxProduct = function (n) {
-  let res = 1;
-  var split = n.toString().split("");
+  const digits = n.toString().split("").map(Number);
+  let max = 0;
 
-  for (const num of split) {
-    res *= num;
+  for (let i = 0; i < digits.length; i++) {
+    for (let j = i + 1; j < digits.length; j++) {
+      max = Math.max(max, digits[i] * digits[j]);
+    }
   }
-  return res;
+
+  return max;
 };
 
 console.log(maxProduct(267));
