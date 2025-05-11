@@ -1,0 +1,12 @@
+# ************* first & last element
+# lower will be included every time but high will be not 
+
+# ************* Rotated Array
+# In sorted array for mid left will be small and right will be greater
+# template 
+# while(l < r) again again loop will be stuck 
+# if(arr[mid] > arr[r]){
+# l = mid + 1 
+# } else {
+# r = mid 
+# }
