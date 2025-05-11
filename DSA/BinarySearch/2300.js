@@ -22,3 +22,4 @@ var successfulPairs = function (spells, potions, success) {
 };
 
 console.log(successfulPairs([5, 1, 3], [1, 2, 3, 4, 5], 7));
+console.log('hey')
