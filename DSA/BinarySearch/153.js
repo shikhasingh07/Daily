@@ -11,7 +11,7 @@ const rotated = (nums) => {
         right = mid ;
     }
   }
-  return nums[right];
+  return nums[left];
 };
 
-console.log(rotated([3, 4, 5, 1, 2]));
+console.log(rotated([3, 4, 5, 9, 2]));
