@@ -10,3 +10,7 @@
 # } else {
 # r = mid 
 # }
+
+# ************* Single element 
+# 540 is all about conditions [Solve more on this]
+# how well you understand 
