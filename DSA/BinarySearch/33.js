@@ -33,19 +33,19 @@ const bnS = (nums , end , start , target) => {
     return -1;
 }
 
-const search = (nums, target) => {
+const search = (arr, key) => {
   //finding pivot index
-  let n = nums.length;
+  let n = arr.length;
 
-  let pivotnums = findPivot(nums);
+  let pivotnums = findPivot(arr);
   //left
-  let idx = bnS(nums, pivotnums - 1, 0, target);
+  let idx = bnS(arr, pivotnums - 1, 0, key);
 
   if (idx !== -1) {
     return idx;
   }
 
-  return bnS(nums , n - 1 , pivotnums , target)
+  return bnS(arr , n - 1 , pivotnums , key)
 };
 
 console.log(Search([4, 5, 6, 7, 0, 1, 2], 3));

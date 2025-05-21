@@ -1,7 +1,7 @@
 
 # what i learned till - binary search
 # find a peak , binary S basic , rotated array questions basic , lower bound and upper bound , 
-# finding minimum element , 2d array search 
+# finding minimum element , 2d array search  , skiiping duplicate
 
 # ************* first & last element
 # lower will be included every time but high will be not 
