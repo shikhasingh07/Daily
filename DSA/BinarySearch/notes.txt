@@ -27,3 +27,15 @@
 # while (left < right && nums[right] === nums[right - 1]) {
 #   right--;
 # }
+
+# ************** Learn this trick for counting natural number
+#   while (start <= end){
+#     let mid = Math.floor((start + end) / 2);
+#     if(nums[mid] - mid - 1 < k){
+#         start = mid + 1; 
+#     }else {
+#         end =  mid - 1;
+#     }
+#   }
+#   return start + k;
+
