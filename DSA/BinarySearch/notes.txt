@@ -39,3 +39,5 @@
 #   }
 #   return start + k;
 
+
+# When to use Loop inside binary search - 2187
