@@ -78,7 +78,43 @@
 // };
 
 //curry 
-function curry () {
+// function curry (fn) {
+//     return function curry(...arg){
+//       if(arg.length >= fn.length){ 
+//         return fn(...arg)
+//       }else {
+//         return function (...next){
+//             return curry(...arg , ...next);
+//         }
+//       }
+//     }
+// }
 
-}
+// function multiple (a , b , c) {
+//     return a * b * c; 
+// }
 
+// let ans = curry(multiple); 
+// console.log(ans((2),(5),(4)));
+
+
+// import { useState, useCallback } from "react";
+// export default function useBoolean(initialValue = false) {
+//   const [value, setValue] = useState(initialValue);
+//   const setTrue = useCallback(() => setValue(true), []);
+//   const setFalse = useCallback(() => setValue(false), []);
+//   return { value, setTrue, setFalse };
+// }
+
+
+// import { useState, useCallback } from "react";
+
+// export default function useCycle(...args) {
+//   const [index, setIndex] = useState(0);
+
+//   const cycle = useCallback(() => {
+//     setIndex((index) => (index + 1) % args.length);
+//   }, []);
+
+//   return [args[index], cycle] as const;
+// }
