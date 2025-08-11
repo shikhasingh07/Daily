@@ -19,3 +19,4 @@ var pivotArray = function (nums, pivot) {
     }
     return ans;
 };
+ 
