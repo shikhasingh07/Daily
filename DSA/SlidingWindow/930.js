@@ -17,4 +17,4 @@ var numSubarraysWithSum = function(nums, goal) {
 };
 
 
-console.log(numSubarraysWithSum([1,0,1,0,1],2))
+console.log(numSubarraysWithSum([1,3,6],4))
