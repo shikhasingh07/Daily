@@ -1,0 +1,14 @@
+
+In Combination sum || 
+Quick heuristics (you can ask yourself):
+
+Am I deciding on each element in order?
+→ use choose/skip (no loop needed).
+(e.g. subsets)
+
+Am I building a sequence where each step can come from many options?
+→ use for loop inside recursion.
+(e.g. permutations, combination sum, N-Queens, word search)
+
+Do I need to skip duplicates?
+→ sorting + for loop with if (i > start && nums[i] === nums[i-1]) continue is the standard pattern.
