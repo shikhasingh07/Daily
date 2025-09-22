@@ -1,3 +1,4 @@
+// [false , false , false]
 function permute(nums, ans, current, used) {
   if (current.length === nums.length) {
     ans.push([...current]);
