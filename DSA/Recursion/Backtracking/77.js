@@ -3,8 +3,9 @@ function combined(n, index, current, ans, k) {
     ans.push([...current]);
     return;
   }
-
-  for (let i = index; i <= n; i++) {
+ 
+  const need = k - current.length;
+  for (let i = index; i <= n - need + 1; i++) {
     current.push(i);
     combined(n, i + 1, current, ans, k);
     current.pop();
