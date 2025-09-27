@@ -12,3 +12,24 @@ Am I building a sequence where each step can come from many options?
 
 Do I need to skip duplicates?
 → sorting + for loop with if (i > start && nums[i] === nums[i-1]) continue is the standard pattern.
+
+
+Generic Backtracking with Constraints Template
+function backtrack(idx, path):
+    if idx == targetLength:
+        if path satisfies all constraints:
+            return path   // or collect in results
+        else:
+            return null   // dead end
+
+    for choice in possibleChoices:
+        if choice violates constraint with path:
+            continue
+
+        make choice (add to path / mark used)
+        result = backtrack(idx + 1, path)
+        if result is valid:
+            return result   // stop early if only one needed
+        undo choice (remove from path / unmark used)
+
+    return null  // no valid sequence from this branch
