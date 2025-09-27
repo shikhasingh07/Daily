@@ -3,15 +3,16 @@ function bracktracking(nums, n, idx, current, numsSet) {
     return numsSet.has(current) ? null : current;
   }
 
- // first try adding "0"
+  console.log({ current, idx });
   let res = bracktracking(nums, n, idx + 1, current + "0", numsSet);
+  console.log({ res });
   if (res) return res;
 
-  // if not found, try adding "1"
+  console.log({ current, res });
   res = bracktracking(nums, n, idx + 1, current + "1", numsSet);
   if (res) return res;
 
-  return null
+  return null;
 }
 
 var findDifferentBinaryString = function (nums) {
@@ -19,4 +20,4 @@ var findDifferentBinaryString = function (nums) {
   return bracktracking(nums, nums.length, 0, "", numsSet);
 };
 
-console.log(findDifferentBinaryString(["01", "10"]));
+console.log(findDifferentBinaryString(["001","011","000"]));
