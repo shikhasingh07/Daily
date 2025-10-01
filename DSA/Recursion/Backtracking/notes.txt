@@ -47,6 +47,7 @@ Trick:
   - Matchsticks to Square
   - Partition to K Equal Sum Subsets
   - Construct the Lexicographically Largest Valid Sequence
+  - "N-Queens = constraint-based backtracking with col + two diagonals"
 
 Trick:
 - Greedy start with largest number first (for lexicographically largest).

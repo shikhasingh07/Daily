@@ -21,8 +21,6 @@ var combinationSum2 = function (candidates, target) {
   candidates.sort((a, b) => a - b);
   let ans = [];
   combinationSum(candidates, 0, [], target, ans);
-
-
   return ans;
 };
 
