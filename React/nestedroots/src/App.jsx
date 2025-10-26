@@ -10,7 +10,7 @@ function App() {
 
   return (
     <>
-      {/* <NestedRoots /> */}
+      <NestedRoots />
 
       {/* <button
         onClick={() => ref?.current?.reset()} // Call the reset method exposed by ReactHooksExamples
@@ -22,7 +22,7 @@ function App() {
 
       {/* <Stock/> */}
 
-      <GridHighLight/>
+      {/* <GridHighLight/> */}
     </>
   );
 }
