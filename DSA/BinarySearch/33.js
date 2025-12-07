@@ -49,3 +49,4 @@ const search = (arr, key) => {
 };
 
 console.log(Search([4, 5, 6, 7, 0, 1, 2], 3));
+// https://leetcode.com/problems/search-in-rotated-sorted-array/description/
