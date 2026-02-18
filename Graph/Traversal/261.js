@@ -16,6 +16,8 @@ function dfs(graph, visit, node, parent) {
   }
   return true;
 }
+
+// DFS cycle detection - undirected
 const validTree = (n, edges) => {
   if (edges.length !== n - 1) return false;
   let graph = Array.from({ length: n }, () => []);

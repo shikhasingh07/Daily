@@ -14,7 +14,7 @@ function dfs(i , state){
 
     return true;
 }
-
+// DFS cycle detection - directed
 var eventualSafeNodes = function (graph) {
   let n = graph.length;
   let state = new Array(n).fill(0);
