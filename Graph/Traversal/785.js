@@ -10,6 +10,7 @@ function dfs(i, graph, color) {
       return false;
     }
   }
+  return true;
 }
 var isBipartite = function (graph) {
   let n = graph.length;
